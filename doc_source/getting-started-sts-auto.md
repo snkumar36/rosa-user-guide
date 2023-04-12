@@ -102,6 +102,7 @@ The account may take 1\-2 minutes to become active\.
    ```
 
 1. Log in to the cluster through the CLI by running the following command\. Replace `<api_url>` and `<cluster_admin_password>` with the credentials for your environment\.
+2. If you get timeout error while logging into the cluster update the rosa security groups allowing traffic on port 22 (ssh) for your computer.
 
    ```
    oc login <api_url> --username cluster-admin --password <cluster_admin_password>
